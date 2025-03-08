@@ -1,0 +1,320 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.hero {
+    background-color: #3366FF;
+    height: 70vh;
+    position: relative;
+}
+
+.navbar {
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 9vh;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 5;
+    transform: translateY(-40%);
+    animation: fadedown 1s ease-in-out forwards;
+}
+
+@keyframes fadedown {
+    from {
+        opacity: 0;
+        transform: translateY(-40%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+
+.logo {
+    color: #3366FF;
+    font-size: xx-large;
+    padding-left: 70px;
+    cursor: pointer;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    padding-right: 70px;
+}
+
+.navbar a {
+    padding: 0 20px;
+    color: #000;
+    text-decoration: none;
+    font-size: x-large;
+}
+
+
+
+.hero-content {
+    display: flex;
+    justify-content: center;
+    height: 70vh;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    transform: translateX(20%);
+    animation: faderight 2s ease-in-out forwards;
+}
+
+@keyframes faderight {
+    from {
+        opacity: 0;
+        transform: translateX(20%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
+
+
+.hero-content div {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: xxx-large;
+}
+
+.hero-content p {
+    font-size: larger;
+}
+
+.btn-hero {
+    background-color: #fff;
+    color: #3366FF;
+    border: none;
+    border-radius: 6px;
+    padding: 15px 3%;
+    margin-top: 50px;
+    box-shadow: 4px 5px 10px 2px rgba(0, 0, 0, 0.3);
+    font-weight: 600;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn-hero:hover {
+    transform: scale(1.1);
+}
+
+
+
+.hubungi {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    position: absolute;
+    left: 50%;
+    bottom: -45px;
+    transform: translate(-50%);
+    z-index: 1;
+}
+
+
+.call {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 4px 5px 10px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 7px;
+    width: 270px;
+    height: 90px;
+    padding-left: 20px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    bottom: 10px;
+    right: 0;
+    animation: scaleIn 2s ease-in-out;
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.call div {
+    padding-left: 10px;
+}
+
+.call i {
+    font-size: x-large;
+}
+
+.call:hover {
+    transform: scale(1.1);
+}
+
+
+#Formulir {
+    margin-top: 120px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+#Formulir h1 {
+    font-size: xx-large;
+    text-align: center;
+}
+
+.form-kontak-child {
+    display: grid;
+    width: 100%;
+    min-width: 1000px;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.image-seksion {
+    display: flex;
+    justify-content: center;
+
+}
+
+.kontak-image {
+    width: 100%;
+    max-width: 440px;
+    margin-top: -30px;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+}
+
+.textarea {
+    grid-column: span 2;
+    height: 400px;
+    width: 400px;
+    outline: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin-top: 40px;
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form button {
+    padding: 15px 40px;
+    background-color: #3366FF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 90px;
+}
+
+
+.submit {
+    width: 500px;
+    flex-direction: column;
+    display: flex;
+    margin-left: 30px;
+    height: 500px;
+    margin-top: 40px;
+
+}
+
+.input {
+    width: 400px;
+    padding: 15px 5px;
+    border-radius: 7px;
+    outline: none;
+    border: 0.5px solid rgba(0, 0, 0, 0.4);
+
+}
+
+/* Animasi dasar */
+.scroll-animation {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* Saat elemen masuk viewport */
+.scroll-animation.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+/* 
+#Formulir {
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+#Formulir h1 {
+    font-size: xx-large;
+}
+
+.form-kontak-child {
+    display: grid;
+    width: 100%;
+    background-color: rebeccapurple;
+    grid-template-rows: 1fr 1fr;
+}
+
+.form {
+    display: grid;
+    width: 100%;
+    grid-template-rows: 1fr 1fr;
+
+}
+
+.kontak-image {
+    width: 500px;
+    height: 500px;
+} */
