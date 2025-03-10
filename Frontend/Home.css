@@ -10,6 +10,7 @@ section {
     display: flex;
     justify-content: center;
     margin-top: 100px;
+    width: screen;
 }
 
 #hero{ 
@@ -21,24 +22,102 @@ section {
     .hero-content{
         width : 50%;
         color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        row-gap: 2;
         h1{
             font-size: 3rem;
             font-weight: 300;
         }
 
+        .display-on-mobile {
+            display: none;
+        }
+
         button{
             padding:1rem;
+            margin-top: 20px;
             border-radius: 15px;
             cursor: pointer;
             border: 1px solid transparent;
-            margin-top: 2rem;
             color : #3366FF;
             background-color: white;
             font-weight: 600;
-
+            align-self: flex-start;
             :hover{
                 filter: drop-shadow(0 5px 10px black);
             }
         }
+
+        img{
+            width: 20rem;
+            height: 20rem;
+        }
+    }
+    
+    
+}
+
+
+@media (max-width: 768px) {
+    .hide-on-mobile {
+      display: none !important;
+    }
+
+   #hero{
+        padding-inline: 1rem;
+
+        .hero-content{
+            width: 100% !important;
+            align-items: center;
+            text-align: center;
+            row-gap: 1rem;
+
+            h1{
+                font-size: 1.5rem;
+                animation: verticalAppearance 1s ease-in-out forwards;
+            }
+
+            .display-on-mobile{
+                display: block;
+                width: 100%;
+                height: 20rem;
+            }
+
+            p{
+                font-size: 0.9rem;
+                animation: horizontalApperance 1s ease-in-out forwards;
+
+            }
+
+            button{
+                align-self: center;
+            }
+        }
+   }
+}
+
+@keyframes verticalAppearance {
+    0% {
+        transform: translateY(-30px); 
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+  
+
+@keyframes horizontalApperance {
+    0% {
+        transform: translateX(-30px); 
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
     }
 }
