@@ -1,10 +1,44 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
+
+
 
 section {
     display: flex;
     justify-content: center;
     margin-top: 100px;
+}
+
+#hero{ 
+    background-color: #3366FF;
+    gap: 2;
+    padding-block: 3rem;
+    padding-inline: 6rem;
+
+    .hero-content{
+        width : 50%;
+        color: white;
+        h1{
+            font-size: 3rem;
+            font-weight: 300;
+        }
+
+        button{
+            padding:1rem;
+            border-radius: 15px;
+            cursor: pointer;
+            border: 1px solid transparent;
+            margin-top: 2rem;
+            color : #3366FF;
+            background-color: white;
+            font-weight: 600;
+
+            :hover{
+                filter: drop-shadow(0 5px 10px black);
+            }
+        }
+    }
 }
