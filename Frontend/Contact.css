@@ -29,21 +29,6 @@ html {
     animation: fadedown 1s ease-in-out forwards;
 }
 
-@keyframes fadedown {
-    from {
-        opacity: 0;
-        transform: translateY(-40%);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-
-}
-
-
-
 .logo {
     color: #3366FF;
     font-size: xx-large;
@@ -156,17 +141,6 @@ html {
     animation: scaleIn 2s ease-in-out;
 }
 
-@keyframes scaleIn {
-    from {
-        transform: scale(0.8);
-        opacity: 0;
-    }
-
-    to {
-        transform: scale(1);
-        opacity: 1;
-    }
-}
 
 .call div {
     padding-left: 10px;
@@ -238,6 +212,7 @@ html {
 .button-container {
     display: flex;
     justify-content: space-between;
+    margin-top: 20px;
 }
 
 .form button {
@@ -263,58 +238,50 @@ html {
 
 .input {
     width: 400px;
-    padding: 15px 5px;
+    padding: 25px 10px;
     border-radius: 7px;
     outline: none;
     border: 0.5px solid rgba(0, 0, 0, 0.4);
 
 }
 
-/* Animasi dasar */
+
+
+/* Animation */
+
+@keyframes fadedown {
+    from {
+        opacity: 0;
+        transform: translateY(-40%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
 .scroll-animation {
     opacity: 0;
     transform: translateY(50px);
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
-/* Saat elemen masuk viewport */
 .scroll-animation.show {
     opacity: 1;
     transform: translateY(0);
 }
-
-
-
-/* 
-#Formulir {
-    margin-top: 100px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    font-family: 'Poppins', sans-serif;
-}
-
-#Formulir h1 {
-    font-size: xx-large;
-}
-
-.form-kontak-child {
-    display: grid;
-    width: 100%;
-    background-color: rebeccapurple;
-    grid-template-rows: 1fr 1fr;
-}
-
-.form {
-    display: grid;
-    width: 100%;
-    grid-template-rows: 1fr 1fr;
-
-}
-
-.kontak-image {
-    width: 500px;
-    height: 500px;
-} */
