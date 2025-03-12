@@ -298,8 +298,12 @@ html {
     margin-top: 120px;
     border-radius: 10%;
     border: 50px solid white;
+    transition: all 0.5s;
 }
 
+iframe:hover {
+    transform: scale(1.1);
+}
 
 .footer {
     display: flex;
