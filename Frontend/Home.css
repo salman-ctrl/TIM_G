@@ -29,7 +29,7 @@ section {
         row-gap: 2;
         h1{
             font-size: 3rem;
-            font-weight: 300;
+            font-weight: 600;
         }
 
         .display-on-mobile {
@@ -52,7 +52,7 @@ section {
         }
 
         img{
-            width: 20rem;
+            width: 30rem;
             height: 20rem;
         }
     }
@@ -123,6 +123,13 @@ section {
 }
 
 #portofolio{
+    .portofolio-content{
+        width: 90%;
+        max-width: 1200px;
+        text-align: center;
+        background-color:0;
+        
+    }
     h1 {
         text-align: center;
         padding: 20px;
@@ -131,16 +138,17 @@ section {
     
     .subtext {
         color: #000000;
-        font-size: 20px;
+        font-size: 16px;
         margin-bottom: 30px;
-        max-width: 1800px;
+        max-width: 900px;
         text-align: center;
+        margin: auto;
     }
     
     .carousel-container {
         position: relative;
-        max-width: 1800px;
-        margin: auto;
+        max-width: 1200px;
+        margin: 20px;
     }
     
     .card {
@@ -161,7 +169,7 @@ section {
     
     .card-image {
         width: 60%;
-        height: 500px;
+        height: 350px;
         object-fit: cover;
     }
     
@@ -226,14 +234,20 @@ section {
     }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1023px) {
     #portofolio{
+        .portofolio-content{
+            max-width: 100%;
+        }
+        
         .card {
             flex-direction: column; 
+            border-radius: 10px;
         }
     
         .card-image, .card-content {
             width: 100%; 
+            height: auto;
         }
     
         .card-image {
@@ -260,18 +274,32 @@ section {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 767px) {
     #portofolio{
         .card-image {
-            height: 200px;
+            width: 100%;
+            height: auto;
+        }
+
+        .subtext{
+            font-size: 12px;
+        }
+
+        .carousel-container{
+            width: 96%;
         }
     
         .card-content h3 {
-            font-size: 22px;
+            font-size: 15px;
         }
     
         .card-content p {
-            font-size: 18px;
+            font-size: 10px;
+        }
+
+        .card-content{
+            width: 100%;
+            padding: 15px;
         }
     }
 }
