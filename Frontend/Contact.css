@@ -245,10 +245,83 @@ html {
 
 }
 
+/* section footer  */
+
+
+.foot {
+    background: #142C9F;
+    color: white;
+    width: 100%;
+    height: 70vh;
+}
+
+.footerhead {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+.logofooter {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    align-items: center;
+    flex-direction: column;
+    height: 300px;
+}
+
+.logofooter p {
+    margin-top: -20px;
+}
+
+.footerhead img {
+    max-width: 300px;
+    height: 120px;
+}
+
+.gmaps {
+    max-width: 500px;
+
+}
+
+.gmaps iframe {
+    width: 450px;
+    height: 250px;
+    margin-top: 120px;
+    border-radius: 10%;
+    border: 50px solid white;
+}
+
+
+.footer {
+    display: flex;
+}
+
+
+
+.sosmed {
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    width: auto;
+}
+
+
+.sosmed i {
+    padding-bottom: 15px;
+    font-size: 15px;
+    text-transform: lowercase;
+    display: inline-block;
+}
+
+.sosmed span {
+    text-transform: lowercase;
+    font-weight: 400;
+}
 
 
 /* Animation */
-
 @keyframes fadedown {
     from {
         opacity: 0;
