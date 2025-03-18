@@ -14,10 +14,59 @@ section {
   width: screen;
 }
 
+.navbar {
+  background-color: #fff;
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 9vh;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 5;
+  animation: fadedown 1s ease-in-out forwards;
+}
+
+.logo {
+  color: #3366FF;
+  font-size: xx-large;
+  padding-left: 70px;
+  cursor: pointer;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  padding-right: 70px;
+  transition: all 2s ease-in-out;
+}
+
+.navbar a {
+  padding: 0 20px;
+  color: #000;
+  text-decoration: none;
+  font-size: x-large;
+  transition: all 0.5s;
+}
+
+.navbar a:hover {
+  transform: scale(1.1);
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  font-size: 2rem;
+  transition: all 2s ease-in-out;
+}
+
+
 #hero {
   background-color: #3366ff;
   gap: 2;
-  margin-top: 0;
+  margin-top: 12rem;
   padding-block: 3rem;
   padding-inline: 6rem;
 
