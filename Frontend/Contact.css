@@ -59,7 +59,7 @@ html {
     display: none;
     cursor: pointer;
     font-size: 2rem;
-    transition: all 2s ease-in-out;
+    transition: all 1s ease-in-out;
 }
 
 @media screen and (max-width: 768px) {
@@ -95,6 +95,10 @@ html {
         padding: 15px;
     }
 
+    
+    .logo{
+        padding-left: 0;
+    }
     .hamburger {
         display: block;
         margin-right: 30px;
