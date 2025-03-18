@@ -118,20 +118,20 @@ section {
   }
 }
 
-#portofolio {
-  .portofolio-content {
+#portofolio .portofolio-content {
     width: 90%;
     max-width: 1200px;
     text-align: center;
-    background-color: 0;
+    background-color: transparent;
   }
-  h1 {
+  
+#portofolio h1 {
     text-align: center;
     padding: 20px;
     background: #ffffff;
   }
-
-  .subtext {
+  
+  #portofolio .subtext {
     color: #000000;
     font-size: 16px;
     margin-bottom: 30px;
@@ -139,14 +139,14 @@ section {
     text-align: center;
     margin: auto;
   }
-
-  .carousel-container {
+  
+  #portofolio .carousel-container {
     position: relative;
     max-width: 1200px;
-    margin: 20px;
+    margin: 20px auto;
   }
-
-  .card {
+  
+  #portofolio .card {
     display: flex;
     background: #fff;
     border-radius: 20px;
@@ -157,34 +157,34 @@ section {
     transition: 0.5s;
     align-items: center;
   }
-
-  .card:hover {
+  
+  #portofolio .card:hover {
     color: #007bff;
   }
-
-  .card-image {
+  
+  #portofolio .card-image {
     width: 60%;
     height: 350px;
     object-fit: cover;
   }
-
-  .card-content {
+  
+  #portofolio .card-content {
     width: 50%;
     padding: 30px;
   }
-
-  .card-content h3 {
+  
+  #portofolio .card-content h3 {
     font-size: 22px;
     font-weight: 600;
   }
-
-  .card-content p {
+  
+  #portofolio .card-content p {
     font-size: 18px;
     color: #000000;
     line-height: 1.6;
   }
-
-  .w3-button {
+  
+  #portofolio .w3-button {
     position: absolute;
     top: 50%;
     transform: translateY(-60%);
@@ -195,25 +195,25 @@ section {
     padding: 5px 10px;
     cursor: pointer;
   }
-
-  .w3-button:hover {
+  
+  #portofolio .w3-button:hover {
     background: #007bffa4;
   }
-
-  .w3-display-left {
+  
+  #portofolio .w3-display-left {
     left: 10px;
   }
-
-  .w3-display-right {
+  
+  #portofolio .w3-display-right {
     right: 10px;
   }
-
-  .dots-container {
+  
+  #portofolio .dots-container {
     text-align: center;
     margin-top: 20px;
   }
-
-  .dot {
+  
+  #portofolio .dot {
     height: 4px;
     width: 50px;
     margin: 0px;
@@ -223,82 +223,79 @@ section {
     transition: background-color 0.3s ease;
     cursor: pointer;
   }
-
-  .dot.active {
+  
+  #portofolio .dot.active {
     background-color: #007bff;
   }
-}
-
-@media (max-width: 1023px) {
-  #portofolio {
-    .portofolio-content {
+  
+  @media (max-width: 1023px) {
+    #portofolio .portofolio-content {
       max-width: 100%;
     }
-
-    .card {
+  
+    #portofolio .card {
       flex-direction: column;
       border-radius: 10px;
     }
-
-    .card-image,
-    .card-content {
+  
+    #portofolio .card-image,
+    #portofolio .card-content {
       width: 100%;
       height: auto;
     }
-
-    .card-image {
+  
+    #portofolio .card-image {
       height: 500px;
     }
-
-    .card-content {
+  
+    #portofolio .card-content {
       padding: 20px;
     }
-
-    .card-content h3 {
+  
+    #portofolio .card-content h3 {
       font-size: 22px;
       text-align: center;
     }
-
-    .card-content p {
+  
+    #portofolio .card-content p {
       font-size: 18px;
       text-align: center;
     }
-
-    .w3-button {
+  
+    #portofolio .w3-button {
       padding: 8px 12px;
     }
   }
-}
-
-@media (max-width: 767px) {
-  #portofolio {
-    .card-image {
+  
+  /* Responsive Mobile */
+  @media (max-width: 767px) {
+    #portofolio .card-image {
       width: 100%;
       height: auto;
     }
-
-    .subtext {
+  
+    #portofolio .subtext {
       font-size: 12px;
     }
-
-    .carousel-container {
+  
+    #portofolio .carousel-container {
       width: 96%;
     }
-
-    .card-content h3 {
+  
+    #portofolio .card-content h3 {
       font-size: 15px;
     }
-
-    .card-content p {
+  
+    #portofolio .card-content p {
       font-size: 10px;
     }
-
-    .card-content {
+  
+    #portofolio .card-content {
       width: 100%;
       padding: 15px;
     }
   }
-}
+  
 
 #testimonial-section {
   max-width: 1200px;
