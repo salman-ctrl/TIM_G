@@ -39,7 +39,7 @@ section {
   list-style: none;
   display: flex;
   padding-right: 70px;
-  transition: all 2s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .navbar a {
