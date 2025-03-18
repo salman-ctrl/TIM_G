@@ -118,11 +118,205 @@ section {
   }
 }
 
+
+/* CSS Layanan */
+#layanan {
+    width: 90%;
+    max-width: 1200px;
+    text-align: center;
+    background-color: transparent;
+    margin: auto;
+    margin-top: 100px;
+}
+
+#layanan h1 {
+    text-align: center;
+    padding: 20px;
+    background: #ffffff;
+}
+
+#layanan .subtext {
+    color: #000000;
+    font-size: 16px;
+    margin-bottom: 30px;
+    max-width: 900px;
+    text-align: center;
+    margin: auto;
+}
+
+/* Container untuk layanan */
+#layanan .layanan-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+/* Card Layanan */
+#layanan .card {
+    background: #fff;
+    border-radius: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+    width: calc(33.33% - 20px); /* Membagi dalam 3 kolom */
+    min-width: 250px; /* Agar tetap terbaca pada layar kecil */
+    max-width: 350px;
+}
+
+#layanan .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+#layanan .card-image {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+}
+
+#layanan .card-content {
+    padding: 20px;
+}
+
+#layanan .card h3 {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+#layanan .card p {
+    font-size: 16px;
+    color: #101010;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#layanan .btn {
+    display: inline-block;
+    padding: 7px 80px;
+    background: #2d64f3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: 0.3s;
+}
+
+#layanan .btn:hover {
+    background: #c2d2fe;
+    border: 1px solid #2d64f3;
+    color: #2145a2;
+}
+
+/* Responsif Layanan */
+@media (max-width: 1024px) {
+    #layanan .layanan-container {
+        max-width: 100%;
+    }
+
+    #layanan .card {
+        max-width: 300px;
+        border-radius: 10px;
+    }
+
+    #layanan .card-image {
+        width: 100%;
+        height: auto;
+        background-size: cover;
+        background-position: center;
+    }
+
+    #layanan .card h3 {
+        font-size: 18px;
+    }
+
+    #layanan .card p {
+        font-size: 14px;
+    }
+    #layanan .btn {
+        padding: 6px 80px;
+        font-size: 12px;
+    }
+}
+
+/* Responsif Layanan */
+@media (max-width: 768px) {
+    #layanan .layanan-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #layanan .card {
+        width: 100%; 
+        max-width: 350px;
+    }
+
+    #layanan .subtext {
+        font-size: 12px;
+    }
+
+    #layanan .card h3 {
+        font-size: 12px;
+    }
+
+    #layanan .card p {
+        font-size: 16px;
+    }
+
+    #layanan .btn {
+        padding: 8px 100px;
+        font-size: 12px;
+    }
+}
+
+/* Responsif Layanan */
+@media (max-width: 480px) {
+    #layanan {
+        width: 85%;
+    }
+
+    #layanan .card {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    #layanan .card-image {
+        width: 100%;
+        height: auto;
+        background-size: cover;
+        background-position: center;
+    }
+
+    #layanan .card h3 {
+        font-size: 14px;
+    }
+
+    #layanan .card p {
+        font-size: 18px;
+        line-height: 1.4;
+    }
+
+    #layanan .btn {
+        padding: 6px 80px;
+        font-size: 10px;
+    }
+}
+
+
+
+/* CSS Porto */
 #portofolio .portofolio-content {
     width: 90%;
     max-width: 1200px;
     text-align: center;
     background-color: transparent;
+    margin: auto;
   }
   
 #portofolio h1 {
@@ -228,7 +422,8 @@ section {
     background-color: #007bff;
   }
   
-  @media (max-width: 1023px) {
+  /* Responfif Porto */
+  @media (max-width: 1024px) {
     #portofolio .portofolio-content {
       max-width: 100%;
     }
@@ -266,9 +461,8 @@ section {
       padding: 8px 12px;
     }
   }
-  
-  /* Responsive Mobile */
-  @media (max-width: 767px) {
+  /* Responsif Porto*/
+  @media (max-width: 768px) {
     #portofolio .card-image {
       width: 100%;
       height: auto;
@@ -295,6 +489,36 @@ section {
       padding: 15px;
     }
   }
+  /* Responsif Porto*/
+  @media (max-width: 480px) {
+    #portofolio .portofolio-content {
+        padding: 10px;
+    }
+
+    #portofolio .card-image {
+        width: 100%;
+        height: auto;
+    }
+
+    #portofolio .card-content {
+        padding: 10px;
+        text-align: center;
+    }
+
+    #portofolio .card-content h3 {
+        font-size: 14px; 
+    }
+
+    #portofolio .card-content p {
+        font-size: 10px;
+        line-height: 1.4;
+    }
+
+    #portofolio .w3-button {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+}
   
 
 #testimonial-section {
