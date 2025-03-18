@@ -15,6 +15,16 @@ document.addEventListener("DOMContentLoaded", function () {
   elements.forEach((el) => observer.observe(el));
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const menuToggle = document.querySelector(".hamburger");
+  const navMenu = document.querySelector(".navbar ul");
+
+  menuToggle.addEventListener("click", function () {
+      navMenu.classList.toggle("show");
+      menuToggle.classList.toggle("active");
+  });
+});
+
 var slideIndex = 1;
 showDivs(slideIndex);
 

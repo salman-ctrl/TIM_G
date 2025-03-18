@@ -66,7 +66,7 @@ section {
 #hero {
   background-color: #3366ff;
   gap: 2;
-  margin-top: 12rem;
+  margin-top: 4rem;
   padding-block: 3rem;
   padding-inline: 6rem;
 
@@ -81,6 +81,10 @@ section {
     h1 {
       font-size: 3rem;
       font-weight: 600;
+    }
+
+    p{
+      text-align: left;
     }
 
     .display-on-mobile {
@@ -114,6 +118,53 @@ section {
     display: none !important;
   }
 
+  .navbar {
+      padding: 0 20px;
+  }
+
+  .navbar ul {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 9vh;
+      left: 0;
+      width: 100%;
+      background-color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      opacity: 0;
+      transform: translateY(-10px);
+      pointer-events: none;
+      transition: all 0.5s ease-in-out;
+  }
+
+  .navbar ul.show {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+  }
+
+  .navbar a {
+      display: block;
+      padding: 15px;
+  }
+
+  .hamburger {
+      display: block;
+      margin-right: 0;
+
+  }
+
+  /* Animasi burger menu */
+  .hamburger.active {
+      transform: rotate(90deg);
+  }
+
+  .logo{
+    padding-left: 0;
+  }
+
   #hero {
     padding-inline: 1rem;
 
@@ -135,6 +186,7 @@ section {
       }
 
       p {
+        
         font-size: 0.9rem;
         animation: horizontalApperance 1s ease-in-out forwards;
       }
