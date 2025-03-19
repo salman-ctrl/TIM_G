@@ -8,6 +8,7 @@ html {
     scroll-behavior: smooth;
 }
 
+
 .hero {
     background-color: #3366FF;
     height: 70vh;
@@ -455,7 +456,13 @@ iframe:hover {
 
 @media screen and (max-width: 768px) {
 
+
     /* HP */
+
+    body {
+        overflow: hidden;
+    }
+
     .hubungi {
         flex-direction: row;
         align-items: center;
