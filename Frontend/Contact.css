@@ -62,210 +62,6 @@ html {
     transition: all 1s ease-in-out;
 }
 
-@media screen and (max-width: 768px) {
-    .navbar {
-        padding: 0 20px;
-    }
-
-    .navbar ul {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 9vh;
-        left: 0;
-        width: 100%;
-        background-color: #fff;
-        text-align: center;
-        padding: 10px 0;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        opacity: 0;
-        transform: translateY(-10px);
-        pointer-events: none;
-        transition: all 0.5s ease-in-out;
-    }
-
-    .navbar ul.show {
-        opacity: 1;
-        transform: translateY(0);
-        pointer-events: auto;
-    }
-
-    .navbar a {
-        display: block;
-        padding: 15px;
-    }
-
-
-    .logo {
-        padding-left: 0;
-    }
-
-    .hamburger {
-        display: block;
-        margin-right: 30px;
-    }
-
-    /* Animasi burger menu */
-    .hamburger.active {
-        transform: rotate(90deg);
-    }
-
-    .text {
-        font-size: 12px;
-        width: 400px;
-        display: none;
-    }
-
-    #text-hero {
-        display: none;
-    }
-
-
-}
-
-
-.hero-content {
-    display: flex;
-    justify-content: center;
-    height: 70vh;
-    flex-direction: column;
-    align-items: center;
-    color: white;
-    transform: translateX(20%);
-    animation: faderight 2s ease-in-out forwards;
-}
-
-
-
-.hero-content div {
-    width: 800px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.hero-content h1 {
-    font-size: xxx-large;
-}
-
-.text {
-    font-size: 16px;
-}
-
-.btn-hero {
-    background-color: #fff;
-    color: #3366FF;
-    border: none;
-    border-radius: 6px;
-    padding: 15px 3%;
-    margin-top: 50px;
-    box-shadow: 4px 5px 10px 2px rgba(0, 0, 0, 0.3);
-    font-weight: 600;
-    transition: all 0.5s ease-in-out;
-}
-
-.btn-hero:hover {
-    transform: scale(1.1);
-}
-
-
-
-.hubungi {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    position: absolute;
-    left: 50%;
-    bottom: -45px;
-    transform: translate(-50%);
-    z-index: 1;
-}
-
-
-.call {
-    display: flex;
-    align-items: center;
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    box-shadow: 4px 5px 10px 2px rgba(0, 0, 0, 0.3);
-    border-radius: 7px;
-    width: 270px;
-    height: 90px;
-    padding-left: 20px;
-    background-color: white;
-    color: black;
-    cursor: pointer;
-    transition: all 0.5s ease-in-out;
-    bottom: 10px;
-    right: 0;
-    animation: scaleIn 2s ease-in-out;
-}
-
-
-.call div {
-    padding-left: 10px;
-}
-
-.call i {
-    font-size: x-large;
-}
-
-.call:hover {
-    transform: scale(1.1);
-}
-
-@media screen and (max-width: 1024px) {
-
-    /* Tablet */
-    .hubungi {
-        gap: 30px;
-        bottom: -30px;
-    }
-
-    .call {
-        width: 230px;
-        height: 80px;
-        padding-left: 15px;
-    }
-
-    .call i {
-        font-size: large;
-    }
-}
-
-@media screen and (max-width: 768px) {
-
-    /* HP */
-    .hubungi {
-        flex-direction: row;
-        align-items: center;
-        gap: 20px;
-        bottom: -20px;
-    }
-
-    .call {
-        width: 100px;
-        height: 40px;
-        padding-left: 10px;
-        justify-content: center;
-        text-align: center;
-        font-size: 6px;
-    }
-
-    .call div {
-        padding-left: 5px;
-    }
-
-    .call i {
-        font-size: small;
-    }
-
-    .text-call {
-        display: none;
-    }
-
-}
 
 
 #Formulir {
@@ -284,8 +80,7 @@ html {
 
 .form-kontak-child {
     display: grid;
-    width: 100%;
-    min-width: 1000px;
+    width: 100vw;
     grid-template-columns: 1fr 2fr;
     gap: 30px;
     align-items: center;
@@ -417,15 +212,12 @@ iframe:hover {
     display: flex;
 }
 
-
-
 .sosmed {
     display: flex;
     flex-direction: column;
     padding-left: 100px;
     width: auto;
 }
-
 
 .sosmed i {
     padding-bottom: 15px;
@@ -437,6 +229,174 @@ iframe:hover {
 .sosmed span {
     text-transform: lowercase;
     font-weight: 400;
+}
+
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding: 0 20px;
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 9vh;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        text-align: center;
+        padding: 10px 0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        opacity: 0;
+        transform: translateY(-10px);
+        pointer-events: none;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .navbar ul.show {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+    }
+
+    .navbar a {
+        display: block;
+        padding: 15px;
+    }
+
+
+    .logo {
+        padding-left: 0;
+    }
+
+    .hamburger {
+        display: block;
+        margin-right: 30px;
+    }
+
+    /* Animasi burger menu */
+    .hamburger.active {
+        transform: rotate(90deg);
+    }
+
+    .text {
+        font-size: 12px;
+        width: 400px;
+        display: none;
+    }
+
+}
+
+
+.hero-content {
+    display: flex;
+    justify-content: center;
+    height: 70vh;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    transform: translateX(20%);
+    animation: faderight 2s ease-in-out forwards;
+}
+
+
+
+.hero-content div {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: xxx-large;
+}
+
+.text {
+    font-size: 16px;
+}
+
+.btn-hero {
+    background-color: #fff;
+    color: #3366FF;
+    border: none;
+    border-radius: 6px;
+    padding: 15px 3%;
+    margin-top: 50px;
+    box-shadow: 4px 5px 10px 2px rgba(0, 0, 0, 0.3);
+    font-weight: 600;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn-hero:hover {
+    transform: scale(1.1);
+}
+
+
+
+.hubungi {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    position: absolute;
+    left: 50%;
+    bottom: -45px;
+    transform: translate(-50%);
+    z-index: 1;
+}
+
+
+.call {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 4px 5px 10px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 7px;
+    width: 270px;
+    height: 90px;
+    padding-left: 20px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    bottom: 10px;
+    right: 0;
+    animation: scaleIn 2s ease-in-out;
+}
+
+
+.call div {
+    padding-left: 10px;
+}
+
+.call i {
+    font-size: x-large;
+}
+
+.call:hover {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 1024px) {
+
+    /* Tablet */
+    .hubungi {
+        gap: 30px;
+        bottom: -30px;
+    }
+
+    .call {
+        width: 230px;
+        height: 80px;
+        padding-left: 15px;
+    }
+
+    .call i {
+        font-size: large;
+    }
 }
 
 
@@ -489,4 +449,156 @@ iframe:hover {
         opacity: 1;
         transform: translateX(0);
     }
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+    /* HP */
+    .hubungi {
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+        bottom: -20px;
+    }
+
+    .call {
+        width: 100px;
+        height: 40px;
+        padding-left: 10px;
+        justify-content: center;
+        text-align: center;
+        font-size: 6px;
+    }
+
+    .call div {
+        padding-left: 5px;
+    }
+
+    .call i {
+        font-size: small;
+    }
+
+    .text-call {
+        display: none;
+    }
+
+    .text-hero {
+        font-size: small;
+        text-align: center;
+        width: 400px;
+        margin-top: 10px;
+    }
+
+    .form-kontak-child {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .image-seksion {
+        order: -1;
+    }
+
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .message-container {
+        order: -1;
+        width: 80vw;
+    }
+
+    .submit {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .textarea {
+        height: 20vh;
+    }
+
+    .input {
+        height: 1vh;
+    }
+
+    .submit,
+    .input,
+    .textarea {
+        width: 80%;
+        max-width: 100%;
+    }
+
+    .kontak-image {
+        max-width: 80%;
+    }
+
+    .foot {
+        height: 100%;
+    }
+
+    .logofooter {
+        height: 10px;
+        margin-top: 80px;
+    }
+
+    .footerhead {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .gmaps iframe {
+        width: 85vw;
+        height: 250px;
+        margin-top: 5 px;
+        border-radius: 10%;
+        outline: 1px solid white;
+        transition: all 0.5s;
+    }
+
+    .footer {
+        justify-content: center;
+        margin-top: 40px;
+        align-items: center;
+        display: flex;
+    }
+
+    .sosmed {
+        display: flex;
+        flex-direction: column;
+        padding-left: 10px;
+        width: 100%;
+    }
+
+    .sosmed h1 {
+        font-size: 1rem;
+        text-align: center;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
+    .sosmed i {
+        padding-bottom: 15px;
+        font-size: 12px;
+        text-transform: lowercase;
+        cursor: pointer;
+    }
+
+    .sosmed span {
+        text-transform: lowercase;
+        font-weight: 400;
+    }
+
+    .sosmed2 {
+        margin-top: 15px;
+    }
+
+
 }

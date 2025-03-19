@@ -7,6 +7,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 section {
   display: flex;
   justify-content: center;
@@ -78,12 +79,13 @@ section {
     align-items: center;
     justify-content: space-around;
     row-gap: 2;
+
     h1 {
       font-size: 3rem;
       font-weight: 600;
     }
 
-    p{
+    p {
       text-align: left;
     }
 
@@ -101,6 +103,7 @@ section {
       background-color: white;
       font-weight: 600;
       align-self: flex-start;
+
       :hover {
         filter: drop-shadow(0 5px 10px black);
       }
@@ -119,49 +122,49 @@ section {
   }
 
   .navbar {
-      padding: 0 20px;
+    padding: 0 20px;
   }
 
   .navbar ul {
-      display: flex;
-      flex-direction: column;
-      position: absolute;
-      top: 9vh;
-      left: 0;
-      width: 100%;
-      background-color: #fff;
-      text-align: center;
-      padding: 10px 0;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      opacity: 0;
-      transform: translateY(-10px);
-      pointer-events: none;
-      transition: all 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 9vh;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+    transition: all 0.5s ease-in-out;
   }
 
   .navbar ul.show {
-      opacity: 1;
-      transform: translateY(0);
-      pointer-events: auto;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
   }
 
   .navbar a {
-      display: block;
-      padding: 15px;
+    display: block;
+    padding: 15px;
   }
 
   .hamburger {
-      display: block;
-      margin-right: 0;
+    display: block;
+    margin-right: 0;
 
   }
 
   /* Animasi burger menu */
   .hamburger.active {
-      transform: rotate(90deg);
+    transform: rotate(90deg);
   }
 
-  .logo{
+  .logo {
     padding-left: 0;
   }
 
@@ -186,7 +189,7 @@ section {
       }
 
       p {
-        
+
         font-size: 0.9rem;
         animation: horizontalApperance 1s ease-in-out forwards;
       }
@@ -203,6 +206,7 @@ section {
     transform: translateY(-30px);
     opacity: 0;
   }
+
   100% {
     transform: translateY(0);
     opacity: 1;
@@ -214,6 +218,7 @@ section {
     transform: translateX(-30px);
     opacity: 0;
   }
+
   100% {
     transform: translateX(0);
     opacity: 1;
@@ -223,405 +228,410 @@ section {
 
 /* CSS Layanan */
 #layanan {
-    width: 90%;
-    max-width: 1200px;
-    text-align: center;
-    background-color: transparent;
-    margin: auto;
-    margin-top: 100px;
+  width: 90%;
+  max-width: 1200px;
+  text-align: center;
+  background-color: transparent;
+  margin: auto;
+  margin-top: 100px;
 }
 
 #layanan h1 {
-    text-align: center;
-    padding: 20px;
-    background: #ffffff;
+  text-align: center;
+  padding: 20px;
+  background: #ffffff;
 }
 
 #layanan .subtext {
-    color: #000000;
-    font-size: 16px;
-    margin-bottom: 30px;
-    max-width: 900px;
-    text-align: center;
-    margin: auto;
+  color: #000000;
+  font-size: 16px;
+  margin-bottom: 30px;
+  max-width: 900px;
+  text-align: center;
+  margin: auto;
 }
 
 /* Container untuk layanan */
 #layanan .layanan-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
 }
 
 /* Card Layanan */
 #layanan .card {
-    background: #fff;
-    border-radius: 16px;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    text-align: center;
-    transition: 0.3s ease-in-out;
-    width: calc(33.33% - 20px); /* Membagi dalam 3 kolom */
-    min-width: 250px; /* Agar tetap terbaca pada layar kecil */
-    max-width: 350px;
+  background: #fff;
+  border-radius: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+  width: calc(33.33% - 20px);
+  /* Membagi dalam 3 kolom */
+  min-width: 250px;
+  /* Agar tetap terbaca pada layar kecil */
+  max-width: 350px;
 }
 
 #layanan .card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
 
 #layanan .card-image {
-    width: 100%;
-    height: auto;
-    background-size: cover;
-    background-position: center;
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-position: center;
 }
 
 #layanan .card-content {
-    padding: 20px;
+  padding: 20px;
 }
 
 #layanan .card h3 {
-    font-size: 14px;
-    font-weight: 400;
-    margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 10px;
 }
 
 #layanan .card p {
-    font-size: 16px;
-    color: #101010;
-    font-weight: bold;
-    margin-bottom: 15px;
+  font-size: 16px;
+  color: #101010;
+  font-weight: bold;
+  margin-bottom: 15px;
 }
 
 #layanan .btn {
-    display: inline-block;
-    padding: 7px 80px;
-    background: #2d64f3;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 12px;
-    transition: 0.3s;
+  display: inline-block;
+  padding: 7px 80px;
+  background: #2d64f3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: 0.3s;
 }
 
 #layanan .btn:hover {
-    background: #c2d2fe;
-    border: 1px solid #2d64f3;
-    color: #2145a2;
+  background: #c2d2fe;
+  border: 1px solid #2d64f3;
+  color: #2145a2;
 }
 
 /* Responsif Layanan */
 @media (max-width: 1024px) {
-    #layanan .layanan-container {
-        max-width: 100%;
-    }
+  #layanan .layanan-container {
+    max-width: 100%;
+  }
 
-    #layanan .card {
-        max-width: 300px;
-        border-radius: 10px;
-    }
+  #layanan .card {
+    max-width: 300px;
+    border-radius: 10px;
+  }
 
-    #layanan .card-image {
-        width: 100%;
-        height: auto;
-        background-size: cover;
-        background-position: center;
-    }
+  #layanan .card-image {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+  }
 
-    #layanan .card h3 {
-        font-size: 18px;
-    }
+  #layanan .card h3 {
+    font-size: 18px;
+  }
 
-    #layanan .card p {
-        font-size: 14px;
-    }
-    #layanan .btn {
-        padding: 6px 80px;
-        font-size: 12px;
-    }
+  #layanan .card p {
+    font-size: 14px;
+  }
+
+  #layanan .btn {
+    padding: 6px 80px;
+    font-size: 12px;
+  }
 }
 
 /* Responsif Layanan */
 @media (max-width: 768px) {
-    #layanan .layanan-container {
-        flex-direction: column;
-        align-items: center;
-    }
+  #layanan .layanan-container {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    #layanan .card {
-        width: 100%; 
-        max-width: 350px;
-    }
+  #layanan .card {
+    width: 100%;
+    max-width: 350px;
+  }
 
-    #layanan .subtext {
-        font-size: 12px;
-    }
+  #layanan .subtext {
+    font-size: 12px;
+  }
 
-    #layanan .card h3 {
-        font-size: 12px;
-    }
+  #layanan .card h3 {
+    font-size: 12px;
+  }
 
-    #layanan .card p {
-        font-size: 16px;
-    }
+  #layanan .card p {
+    font-size: 16px;
+  }
 
-    #layanan .btn {
-        padding: 8px 100px;
-        font-size: 12px;
-    }
+  #layanan .btn {
+    padding: 8px 100px;
+    font-size: 12px;
+  }
 }
 
 /* Responsif Layanan */
 @media (max-width: 480px) {
-    #layanan {
-        width: 85%;
-    }
+  #layanan {
+    width: 85%;
+  }
 
-    #layanan .card {
-        width: 100%;
-        max-width: 320px;
-    }
+  #layanan .card {
+    width: 100%;
+    max-width: 320px;
+  }
 
-    #layanan .card-image {
-        width: 100%;
-        height: auto;
-        background-size: cover;
-        background-position: center;
-    }
+  #layanan .card-image {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+  }
 
-    #layanan .card h3 {
-        font-size: 14px;
-    }
+  #layanan .card h3 {
+    font-size: 14px;
+  }
 
-    #layanan .card p {
-        font-size: 18px;
-        line-height: 1.4;
-    }
+  #layanan .card p {
+    font-size: 18px;
+    line-height: 1.4;
+  }
 
-    #layanan .btn {
-        padding: 6px 80px;
-        font-size: 10px;
-    }
+  #layanan .btn {
+    padding: 6px 80px;
+    font-size: 10px;
+  }
 }
 
 
 
 /* CSS Porto */
 #portofolio .portofolio-content {
-    width: 90%;
-    max-width: 1200px;
-    text-align: center;
-    background-color: transparent;
-    margin: auto;
-  }
-  
+  width: 90%;
+  max-width: 1200px;
+  text-align: center;
+  background-color: transparent;
+  margin: auto;
+}
+
 #portofolio h1 {
-    text-align: center;
-    padding: 20px;
-    background: #ffffff;
+  text-align: center;
+  padding: 20px;
+  background: #ffffff;
+}
+
+#portofolio .subtext {
+  color: #000000;
+  font-size: 16px;
+  margin-bottom: 30px;
+  max-width: 900px;
+  text-align: center;
+  margin: auto;
+}
+
+#portofolio .carousel-container {
+  position: relative;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+#portofolio .card {
+  display: flex;
+  background: #fff;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: left;
+  transition: 0.5s;
+  align-items: center;
+}
+
+#portofolio .card:hover {
+  color: #007bff;
+}
+
+#portofolio .card-image {
+  width: 60%;
+  height: 350px;
+  object-fit: cover;
+}
+
+#portofolio .card-content {
+  width: 50%;
+  padding: 30px;
+}
+
+#portofolio .card-content h3 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+#portofolio .card-content p {
+  font-size: 18px;
+  color: #000000;
+  line-height: 1.6;
+}
+
+#portofolio .w3-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-60%);
+  background: rgba(193, 193, 193, 0.5);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+#portofolio .w3-button:hover {
+  background: #007bffa4;
+}
+
+#portofolio .w3-display-left {
+  left: 10px;
+}
+
+#portofolio .w3-display-right {
+  right: 10px;
+}
+
+#portofolio .dots-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#portofolio .dot {
+  height: 4px;
+  width: 50px;
+  margin: 0px;
+  background-color: #d8d8d8;
+  border-radius: 0%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+#portofolio .dot.active {
+  background-color: #007bff;
+}
+
+/* Responfif Porto */
+@media (max-width: 1024px) {
+  #portofolio .portofolio-content {
+    max-width: 100%;
   }
-  
-  #portofolio .subtext {
-    color: #000000;
-    font-size: 16px;
-    margin-bottom: 30px;
-    max-width: 900px;
-    text-align: center;
-    margin: auto;
-  }
-  
-  #portofolio .carousel-container {
-    position: relative;
-    max-width: 1200px;
-    margin: 20px auto;
-  }
-  
+
   #portofolio .card {
-    display: flex;
-    background: #fff;
-    border-radius: 20px;
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    text-align: left;
-    transition: 0.5s;
-    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
   }
-  
-  #portofolio .card:hover {
-    color: #007bff;
-  }
-  
-  #portofolio .card-image {
-    width: 60%;
-    height: 350px;
-    object-fit: cover;
-  }
-  
+
+  #portofolio .card-image,
   #portofolio .card-content {
-    width: 50%;
-    padding: 30px;
+    width: 100%;
+    height: auto;
   }
-  
+
+  #portofolio .card-image {
+    height: 500px;
+  }
+
+  #portofolio .card-content {
+    padding: 20px;
+  }
+
   #portofolio .card-content h3 {
     font-size: 22px;
-    font-weight: 600;
+    text-align: center;
   }
-  
+
   #portofolio .card-content p {
     font-size: 18px;
-    color: #000000;
-    line-height: 1.6;
-  }
-  
-  #portofolio .w3-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-60%);
-    background: rgba(193, 193, 193, 0.5);
-    color: white;
-    border: none;
-    border-radius: 50px;
-    padding: 5px 10px;
-    cursor: pointer;
-  }
-  
-  #portofolio .w3-button:hover {
-    background: #007bffa4;
-  }
-  
-  #portofolio .w3-display-left {
-    left: 10px;
-  }
-  
-  #portofolio .w3-display-right {
-    right: 10px;
-  }
-  
-  #portofolio .dots-container {
     text-align: center;
-    margin-top: 20px;
   }
-  
-  #portofolio .dot {
-    height: 4px;
-    width: 50px;
-    margin: 0px;
-    background-color: #d8d8d8;
-    border-radius: 0%;
-    display: inline-block;
-    transition: background-color 0.3s ease;
-    cursor: pointer;
+
+  #portofolio .w3-button {
+    padding: 8px 12px;
   }
-  
-  #portofolio .dot.active {
-    background-color: #007bff;
-  }
-  
-  /* Responfif Porto */
-  @media (max-width: 1024px) {
-    #portofolio .portofolio-content {
-      max-width: 100%;
-    }
-  
-    #portofolio .card {
-      flex-direction: column;
-      border-radius: 10px;
-    }
-  
-    #portofolio .card-image,
-    #portofolio .card-content {
-      width: 100%;
-      height: auto;
-    }
-  
-    #portofolio .card-image {
-      height: 500px;
-    }
-  
-    #portofolio .card-content {
-      padding: 20px;
-    }
-  
-    #portofolio .card-content h3 {
-      font-size: 22px;
-      text-align: center;
-    }
-  
-    #portofolio .card-content p {
-      font-size: 18px;
-      text-align: center;
-    }
-  
-    #portofolio .w3-button {
-      padding: 8px 12px;
-    }
-  }
-  /* Responsif Porto*/
-  @media (max-width: 768px) {
-    #portofolio .card-image {
-      width: 100%;
-      height: auto;
-    }
-  
-    #portofolio .subtext {
-      font-size: 12px;
-    }
-  
-    #portofolio .carousel-container {
-      width: 96%;
-    }
-  
-    #portofolio .card-content h3 {
-      font-size: 15px;
-    }
-  
-    #portofolio .card-content p {
-      font-size: 10px;
-    }
-  
-    #portofolio .card-content {
-      width: 100%;
-      padding: 15px;
-    }
-  }
-  /* Responsif Porto*/
-  @media (max-width: 480px) {
-    #portofolio .portofolio-content {
-        padding: 10px;
-    }
-
-    #portofolio .card-image {
-        width: 100%;
-        height: auto;
-    }
-
-    #portofolio .card-content {
-        padding: 10px;
-        text-align: center;
-    }
-
-    #portofolio .card-content h3 {
-        font-size: 14px; 
-    }
-
-    #portofolio .card-content p {
-        font-size: 10px;
-        line-height: 1.4;
-    }
-
-    #portofolio .w3-button {
-        padding: 6px 10px;
-        font-size: 12px;
-    }
 }
-  
+
+/* Responsif Porto*/
+@media (max-width: 768px) {
+  #portofolio .card-image {
+    width: 100%;
+    height: auto;
+  }
+
+  #portofolio .subtext {
+    font-size: 12px;
+  }
+
+  #portofolio .carousel-container {
+    width: 96%;
+  }
+
+  #portofolio .card-content h3 {
+    font-size: 15px;
+  }
+
+  #portofolio .card-content p {
+    font-size: 10px;
+  }
+
+  #portofolio .card-content {
+    width: 100%;
+    padding: 15px;
+  }
+}
+
+/* Responsif Porto*/
+@media (max-width: 480px) {
+  #portofolio .portofolio-content {
+    padding: 10px;
+  }
+
+  #portofolio .card-image {
+    width: 100%;
+    height: auto;
+  }
+
+  #portofolio .card-content {
+    padding: 10px;
+    text-align: center;
+  }
+
+  #portofolio .card-content h3 {
+    font-size: 14px;
+  }
+
+  #portofolio .card-content p {
+    font-size: 10px;
+    line-height: 1.4;
+  }
+
+  #portofolio .w3-button {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+}
+
 
 #testimonial-section {
   max-width: 1200px;
@@ -644,6 +654,7 @@ section {
   margin: 0 auto;
   padding: 2rem 1rem;
 }
+
 p {
   display: block;
   text-align: center;
@@ -663,12 +674,14 @@ h2 {
   margin-bottom: 0.5rem;
   text-align: center;
 }
+
 .carousel-container {
   position: relative;
   overflow: hidden;
   margin: 0 auto;
   width: 100%;
 }
+
 .carousel-track {
   display: flex;
   transition: transform 0.5s ease;
@@ -804,13 +817,16 @@ h2 {
     padding: 1rem;
     min-height: 260px;
   }
+
   .testimonial-content {
     margin-bottom: 1rem;
   }
+
   .testimonial-text {
     font-size: 0.875rem;
     line-height: 1.4;
   }
+
   .user-info {
     flex-direction: row;
     align-items: center;
@@ -830,6 +846,7 @@ h2 {
     font-size: 0.75rem;
   }
 }
+
 .dots {
   text-align: center;
   margin-top: 20px;
@@ -848,4 +865,93 @@ h2 {
 
 .dot.active {
   background-color: #007bff;
+}
+
+
+
+.footer {
+  background-color: #002F9A;
+  color: white;
+  padding: 40px 0;
+  width: 100%;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 200px;
+  padding: 20px;
+}
+
+
+
+.footer-logo-section {
+  padding-left: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+
+.footer-logo {
+  width: 180px;
+  height: auto;
+}
+
+.footer-subtitle {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+
+.footer-info,
+.footer-social {
+  flex: 1;
+  align-items: flex-start;
+}
+
+.footer-social a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-social a:hover {
+  text-decoration: underline;
+}
+
+.footer-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+
+.footer-social p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .footer-logo-section {
+    align-items: center;
+  }
+
+  .footer-info,
+  .footer-social {
+    align-items: flex-start;
+  }
 }
