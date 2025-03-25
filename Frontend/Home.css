@@ -30,7 +30,7 @@ section {
 }
 
 .logo {
-  color: #3366FF;
+  color: #3366ff;
   font-size: xx-large;
   padding-left: 70px;
   cursor: pointer;
@@ -62,7 +62,6 @@ section {
   font-size: 2rem;
   transition: all 1s ease-in-out;
 }
-
 
 #hero {
   background-color: #3366ff;
@@ -156,7 +155,6 @@ section {
   .hamburger {
     display: block;
     margin-right: 0;
-
   }
 
   /* Animasi burger menu */
@@ -189,7 +187,6 @@ section {
       }
 
       p {
-
         font-size: 0.9rem;
         animation: horizontalApperance 1s ease-in-out forwards;
       }
@@ -224,7 +221,6 @@ section {
     opacity: 1;
   }
 }
-
 
 /* CSS Layanan */
 #layanan {
@@ -417,8 +413,6 @@ section {
     font-size: 10px;
   }
 }
-
-
 
 /* CSS Porto */
 #portofolio .portofolio-content {
@@ -632,7 +626,6 @@ section {
   }
 }
 
-
 #testimonial-section {
   max-width: 1200px;
   margin: 0 auto;
@@ -671,6 +664,7 @@ p {
 
 h2 {
   font-weight: 700;
+  margin-top: 3rem;
   margin-bottom: 0.5rem;
   text-align: center;
 }
@@ -867,10 +861,8 @@ h2 {
   background-color: #007bff;
 }
 
-
-
 .footer {
-  background-color: #002F9A;
+  background-color: #002f9a;
   color: white;
   padding: 40px 0;
   width: 100%;
@@ -884,15 +876,12 @@ h2 {
   padding: 20px;
 }
 
-
-
 .footer-logo-section {
   padding-left: 130px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
-
 
 .footer-logo {
   width: 180px;
@@ -903,7 +892,6 @@ h2 {
   font-size: 14px;
   margin-top: 5px;
 }
-
 
 .footer-info,
 .footer-social {
@@ -926,7 +914,6 @@ h2 {
   margin-bottom: 10px;
 }
 
-
 .footer-social p {
   display: flex;
   align-items: center;
@@ -937,7 +924,6 @@ h2 {
   width: 20px;
   height: 20px;
 }
-
 
 @media (max-width: 768px) {
   .footer-container {
